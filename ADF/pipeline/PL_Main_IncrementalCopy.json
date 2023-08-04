@@ -1,6 +1,7 @@
 {
 	"name": "PL_Main_IncrementalCopy",
 	"properties": {
+		"description": "This pipeline is used to copy data from sourcedb to targetdb",
 		"activities": [
 			{
 				"name": "LKP_ConfigurationTable",
