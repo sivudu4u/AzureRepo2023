@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "demobitsdatafactory"
+		},
+		"LS_SQL_CustomerDB_connectionString": {
+			"value": ""
+		},
+		"LS_SQL_Demobitsdb_connectionString": {
+			"value": ""
+		},
+		"LS_Storage_demobitstorage_connectionString": {
+			"value": ""
+		},
+		"TRG_BlobCreatEvent_PL_CopyDynamicFile_properties_PL_CopydynamicFile_parameters_FileName": {
+			"value": "@triggerBody.fileName()"
+		},
+		"TRG_BlobCreatEvent_PL_CopyDynamicFile_properties_typeProperties_scope": {
+			"value": "/subscriptions/ea00055c-a4e8-41da-a211-a1e88b3cf713/resourceGroups/demobits/providers/Microsoft.Storage/storageAccounts/demobitstorage"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
