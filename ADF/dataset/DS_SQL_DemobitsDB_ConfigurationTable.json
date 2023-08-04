@@ -1,0 +1,26 @@
+{
+	"name": "DS_SQL_DemobitsDB_ConfigurationTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_Demobitsdb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "TableName",
+				"type": "varchar"
+			},
+			{
+				"name": "Watermarkcolumn",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "configurationtable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

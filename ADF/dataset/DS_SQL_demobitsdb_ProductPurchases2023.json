@@ -1,0 +1,31 @@
+{
+	"name": "DS_SQL_demobitsdb_ProductPurchases2023",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_Demobitsdb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CustomerCode",
+				"type": "varchar"
+			},
+			{
+				"name": "CustomerName",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductPurchase",
+				"type": "bigint",
+				"precision": 19
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ProductPurchases2023"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

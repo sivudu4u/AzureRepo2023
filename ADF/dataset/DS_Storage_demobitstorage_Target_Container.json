@@ -1,0 +1,24 @@
+{
+	"name": "DS_Storage_demobitstorage_Target_Container",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Storage_demobitstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "target",
+				"container": "container2023"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

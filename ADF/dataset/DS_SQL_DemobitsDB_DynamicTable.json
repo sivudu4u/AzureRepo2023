@@ -1,0 +1,25 @@
+{
+	"name": "DS_SQL_DemobitsDB_DynamicTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_Demobitsdb",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "",
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

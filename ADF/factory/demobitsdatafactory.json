@@ -1,0 +1,9 @@
+{
+	"name": "demobitsdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9765113f-fe57-435c-aa8c-b88d2329eb86",
+		"tenantId": "d5e3303a-8cb7-4789-99a0-5c60bbc969ef"
+	}
+}
